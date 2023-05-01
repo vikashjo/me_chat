@@ -4,7 +4,10 @@
 // that code so it'll be compiled.
 
 require("@rails/ujs").start()
+require("jquery").start()
 require("turbolinks").start()
+require ("semantic-ui").start()
+
 require("@rails/activestorage").start()
 require("channels")
 
@@ -15,3 +18,6 @@ require("channels")
 //
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
+//= require semantic-ui
+import '@doabit/semantic-ui-sass'
+import '@doabit/semantic-ui-sass/src/scss/semantic-ui.scss'
