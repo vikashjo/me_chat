@@ -18,6 +18,10 @@ require("channels")
 //
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
-//= require semantic-ui
+ require semantic-ui
 import '@doabit/semantic-ui-sass'
 import '@doabit/semantic-ui-sass/src/scss/semantic-ui.scss'
+
+$(document).on('turbolinks:load', function() {
+	$('.ui.dropdown').dropdown();
+})
